@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion de Livres</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers la feuille de style CSS -->
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Gestion de Livres</h1>
+        <div class="input-group mb-3">
+            <input type="text" id="title" class="form-control" placeholder="Titre du livre" required>
+            <input type="text" id="author" class="form-control" placeholder="Auteur" required>
+            <div class="input-group-append">
+                <button id="addBook" class="btn btn-primary">Ajouter</button>
+            </div>
+        </div>
+        <input type="text" id="search" class="form-control mb-3" placeholder="Rechercher par titre ou auteur...">
+        <ul id="bookList" class="list-group"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
